@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css">
+<body>
+
+<header>
+
+
+
+
+
+
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 20, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Welcome to Cornerz Wallet";
+    }
+}, 1000);
+</script>
+
+</body>
+
+<body>
+
+<p><font size="12" color="white"> Up coming events.</font></p>
+
+<p> <font size="5" color="white"> Launch March 2019.</font></p>
+<p> <font size="5" color="white"> We will keep you posted of all events prior to launch.</font></p>
+
+
+</body>
+
+
+
+
+
+
+
+ <ul class="main-nav">
+		<li class=""> <a href="Cornerz.html"> HOME </a> </li> 
+                <li> <a href="aboutus.html"> About us </a> </li>
+		<li> <a href="New.html"> News </a> </li>    	
+
+		</ul>
+
+		</div>
+		</div>
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
